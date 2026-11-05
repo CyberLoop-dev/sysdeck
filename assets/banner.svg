@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="sysdeck banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f1a"/>
+      <stop offset="1" stop-color="#0f1d2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#00e5ff"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .b { transform-box: fill-box; transform-origin: 50% 100%; animation: pulse 2.2s ease-in-out infinite alternate; }
+    .b:nth-child(odd) { animation-duration: 1.7s; }
+    .b:nth-child(3n) { animation-delay: -0.8s; }
+    @keyframes pulse { from { transform: scaleY(0.45); } to { transform: scaleY(1); } }
+  </style>
+
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+
+  <!-- terminal window -->
+  <rect x="90" y="52" width="360" height="226" rx="16" fill="#0b0f1a" stroke="#00e5ff" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="116" cy="74" r="5" fill="#00e5ff"/>
+  <circle cx="136" cy="74" r="5" fill="#8b5cf6"/>
+  <circle cx="156" cy="74" r="5" fill="#c084fc"/>
+  <line x1="110" y1="90" x2="430" y2="90" stroke="#1e293b" stroke-width="2"/>
+  <g>
+    <rect class="b" x="118" y="195" width="16" height="55" rx="4" fill="url(#accent)"/>
+    <rect class="b" x="144" y="160" width="16" height="90" rx="4" fill="url(#accent)"/>
+    <rect class="b" x="170" y="180" width="16" height="70" rx="4" fill="url(#accent)"/>
+    <rect class="b" x="196" y="130" width="16" height="120" rx="4" fill="url(#accent)"/>
+    <rect class="b" x="222" y="155" width="16" height="95" rx="4" fill="url(#accent)"/>
+    <rect class="b" x="248" y="100" width="16" height="150" rx="4" fill="url(#accent)"/>
+    <rect class="b" x="274" y="140" width="16" height="110" rx="4" fill="url(#accent)"/>
+    <rect class="b" x="300" y="170" width="16" height="80" rx="4" fill="url(#accent)"/>
+    <rect class="b" x="326" y="115" width="16" height="135" rx="4" fill="url(#accent)"/>
+    <rect class="b" x="352" y="150" width="16" height="100" rx="4" fill="url(#accent)"/>
+    <rect class="b" x="378" y="185" width="16" height="65" rx="4" fill="url(#accent)"/>
+    <rect class="b" x="404" y="125" width="16" height="125" rx="4" fill="url(#accent)"/>
+  </g>
+  <line x1="108" y1="252" x2="432" y2="252" stroke="#334155" stroke-width="2"/>
+
+  <!-- text -->
+  <text x="500" y="150" font-size="76" font-weight="700" fill="url(#title)" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace">sysdeck</text>
+  <text x="502" y="200" font-size="28" fill="#cbd5e1" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif">Your system, but make it sci-fi.</text>
+  <text x="502" y="245" font-size="20" fill="#64748b" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace">Python  •  Rich  •  psutil  •  Windows / Linux / macOS</text>
+</svg>
